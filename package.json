@@ -1,0 +1,23 @@
+{
+  "name": "javascriptsnippets",
+  "version": "1.0.0",
+  "description": "",
+  "main": "functionAsValue.js",
+  "dependencies": {},
+  "devDependencies": {
+    "mocha": "^5.2.0"
+  },
+  "scripts": {
+    "test": "mocha"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/Mattc33/functionalProgrammingJS.git"
+  },
+  "author": "Matt Chan",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/Mattc33/functionalProgrammingJS/issues"
+  },
+  "homepage": "https://github.com/Mattc33/functionalProgrammingJS#readme"
+}
