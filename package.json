@@ -3,12 +3,15 @@
   "version": "1.0.0",
   "description": "",
   "main": "functionAsValue.js",
-  "dependencies": {},
+  "dependencies": {
+    "axios": "^0.18.0",
+    "jest": "^23.1.0"
+  },
   "devDependencies": {
     "mocha": "^5.2.0"
   },
   "scripts": {
-    "test": "mocha"
+    "test": "jest"
   },
   "repository": {
     "type": "git",
