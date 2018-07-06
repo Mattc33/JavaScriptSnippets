@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Document</title>
+    <link rel="stylesheet" href="FileUploader.css">
+</head>
+<body>
+
+    <div class="dropArea">
+        <form class="my-form">
+            <input type="file" id="fileElem" multiple accept="image/*" onchange="handleFiles(this.files)">
+            <label class="button" for="fileElem">Select some files</label>
+        </form>
+    </div>   
+    <progress class="progressBar" max=100 value=0></progress> <!-- Semantic html to signify a progress bar -->
+    <div class="gallery" /></div>
+
+    <script src="./FileUploader.js"></script>
+</body>
+</html>
