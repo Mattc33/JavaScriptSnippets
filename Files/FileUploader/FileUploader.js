@@ -25,7 +25,6 @@ let progressBar = document.querySelector('.progressBar');
 // * Handle dropped files
     dropArea.addEventListener('drop', handleDrop, false)
 
-
 // * Methods
     function preventDefaults(e) {
         e.preventDefault(); // ? will cancel events if it exists, preventing default event behavior
