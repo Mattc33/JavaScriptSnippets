@@ -9,7 +9,7 @@ const outFilename = 'output.json';
 const newRatecard = _New.prem_new(); // val is "Hello"
 const oldRatecard = _Old.prem_old();
 
-const makeNewObj = (arrayNew, arrayOld) => {
+const updateArrayNew = (arrayNew, arrayOld) => {
     for (let i = 0; i < arrayNew.length; i++) {
         arrayNew[i].status = 'new';
         for(let x = 0; x < arrayOld.length; x++) {
@@ -29,7 +29,7 @@ const makeNewObj = (arrayNew, arrayOld) => {
     return arrayNew;
 }
 
-const arrWithStatus = makeNewObj(newRatecard, oldRatecard);
+const arrWithStatus = updateArrayNew(newRatecard, oldRatecard);
 
 const stringify = JSON.stringify(arrWithStatus);
 

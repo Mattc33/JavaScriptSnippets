@@ -1,7 +1,11 @@
 // fake data
 const arr = [
-    [0.125], // Afghantistan prefix 93
-    [0.0268, 0.044, 0.0474], // Russia Mobile prefix 79
+    // [0.125], // Afghantistan prefix 93
+    // [0.0268, 0.044, 0.0474], // Russia Mobile prefix 79
+    [0.1264, 0.1220], // Albania 355
+    [0.3100, 0.2160], // Albania Amc mobile 35568
+    [0.3060, 0.2320], // Albania Eagle mobile 35567
+    [0.3900, 0.2320] // Albania Plud mobile 35566
 ]
 
 const meanFn = (array) => {
@@ -59,12 +63,14 @@ const smartRateFilter = (array) => {
         // * throw out the higher rate and use the lower rate apply 2% markup
         if(arr[i].length === 2) {
             const sort = arr[i].sort();
-            const percentDiff = percentDiffFn(sort[0], sort[1]);
+            const percentDiff = Math.abs(percentDiffFn(sort[0], sort[1]));
+            console.log(percentDiff);
             if (percentDiff >= 30) {
                 priceArr.push({rate: (arr[i][0] * 1.02).toFixed(4)})
             }
             if (percentDiff < 30) {
                 const mean = meanFn(arr[i]);
+                console.log(mean);
                 priceArr.push({rate: (mean * 1.02).toFixed(4)})
             }
         }
