@@ -1,0 +1,13 @@
+.dragElement {
+    position: absolute;
+    z-index: 1;
+    border: 1px solid #000000;
+    text-align: center;
+}
+
+.dragElementHeader {
+    padding: 10px;
+    cursor: move;
+    background: #ccc;
+}
+
