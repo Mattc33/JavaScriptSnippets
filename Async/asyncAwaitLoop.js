@@ -1,20 +1,6 @@
-// async function processArray(array) {
-//     array.forEach(item => {
-//         // define synchronous anonymous function
-//         // it will throw error here
-
-//         // ? it will throw syntax error because you cannot await inside of synchrnous fn, the fn being
-//         // ? item => {}
-//         await func(item);
-//     })
-// };
-
-// processArray();
-
 const delay = () => new Promise(resolve => setTimeout(resolve, 300));
 
 async function delayedLog(item) {
-    // notice that we can await a function that returns promise
     await delay();
     console.log(item);
 }
@@ -39,4 +25,3 @@ async function processArray(array) {
 
 
 processArray([1,2,3,4,5]);
-// processArrayParallel([1,2,3,4,5]);
